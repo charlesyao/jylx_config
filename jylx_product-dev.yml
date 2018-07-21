@@ -15,3 +15,7 @@ spring:
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
