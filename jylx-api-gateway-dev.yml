@@ -1,6 +1,9 @@
-spring:
-  application:
-    name: jylx_api_gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    prefer-ip-address: true
 zuul:
   #全部服务忽略敏感头(全部服务都可以传递cookie)
   sensitive-headers: 
