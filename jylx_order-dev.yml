@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.16.141:3306/jiyilvxing?characterEncoding=utf-8&useSSL=false
     username: root
     password: jiyilvxing
-    url: jdbc:mysql://192.168.16.141:3306/jiyilvxing?characterEncoding=utf-8&useSSL=false
   rabbitmq:
     host: jylx-k8s5
     port: 5672

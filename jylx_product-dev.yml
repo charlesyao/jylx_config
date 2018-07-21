@@ -5,12 +5,12 @@ spring:
     username: root
     password: jiyilvxing
   rabbitmq:
-    host: 192.168.16.141
+    host: jylx-k8s5
     port: 5672
     username: guest
     password: guest
   redis:
-    host: 192.168.16.141
+    host: jylx-k8s5
     port: 6379
   jpa:
     show-sql: true
