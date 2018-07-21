@@ -12,13 +12,10 @@ spring:
     username: guest
     password: guest
   redis:
-    host: 127.0.0.1
+    host: JYLX-k8s5
     port: 6379
 env:
   test13
-girl:
-  name: mo
-  age: 17
 feign:
   client:
     config:
