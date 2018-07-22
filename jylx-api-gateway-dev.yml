@@ -11,7 +11,7 @@ zuul:
   # /myProduct/product/list -> /product/product/list
     product:
       path: /api/**
-      serviceId: product
+      serviceId: jylx-product
       sensitiveHeaders:
 #简洁写法
 #    product: /myProduct/**
