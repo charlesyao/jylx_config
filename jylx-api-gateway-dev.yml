@@ -13,6 +13,10 @@ zuul:
       path: /api/**
       serviceId: jylx-product
       sensitiveHeaders:
+    order:
+      path: /api/**
+      serviceId: jylx-order
+      sensitiveHeaders:
     user:
       path: /api/**
       serviceId: jylx-user
