@@ -13,6 +13,10 @@ zuul:
       path: /api/**
       serviceId: jylx-product
       sensitiveHeaders:
+    user:
+      path: /api/**
+      serviceId: jylx-user
+      sensitiveHeaders:
 #简洁写法
 #    product: /myProduct/**
   #排除某些路由
