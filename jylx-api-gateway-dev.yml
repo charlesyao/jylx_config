@@ -11,21 +11,16 @@ zuul:
     product:
       path: /api/**
       serviceId: jylx-product
-      sensitiveHeaders:
     order:
       path: /api/**
       serviceId: jylx-order
-      sensitiveHeaders:
     user:
       path: /api/**
       serviceId: jylx-user
-      sensitiveHeaders:
-  ignored-patterns:
-    - /**/product/listForOrder 
 management:
   security:
     enabled: false    
- # 新版本中配置zuul超时,在老版本中需要配置hystrix的key来设置超时
+#新版本中配置zuul超时,在老版本中需要配置hystrix的key来设置超时
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
