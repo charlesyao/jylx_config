@@ -1,9 +1,18 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.16.141:3306/jiyilvxing?characterEncoding=utf-8&useSSL=false
     username: root
     password: jiyilvxing
-    url: jdbc:mysql://127.0.0.1:3306/jiyilvxing?characterEncoding=utf-8&useSSL=false
   redis:
-    host: 127.0.0.1
+    host: jylx-k8s5
     port: 6379
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    prefer-ip-address: true
