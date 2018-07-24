@@ -36,6 +36,7 @@ eureka:
       defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
   instance:
     prefer-ip-address: true
+#fegin超时配置,以上注释为老版本
 feign:
   client:
     config:
