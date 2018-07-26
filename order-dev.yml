@@ -37,8 +37,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka/
-  instance:
-    prefer-ip-address: true
 #fegin超时配置,以上注释为老版本
 feign:
   client:
