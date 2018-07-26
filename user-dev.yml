@@ -11,6 +11,9 @@ spring:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
 eureka:
+  instance:
+    hostname: user
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka/
