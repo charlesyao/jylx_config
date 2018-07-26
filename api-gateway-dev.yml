@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
   instance:
     prefer-ip-address: true
 zuul:
@@ -10,13 +10,13 @@ zuul:
   routes:
     product:
       path: /api/**
-      serviceId: jylx-product
+      serviceId: product
     order:
       path: /api/**
-      serviceId: jylx-order
+      serviceId: order
     user:
       path: /api/**
-      serviceId: jylx-user
+      serviceId: user
 management:
   security:
     enabled: false    
